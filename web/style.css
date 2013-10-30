@@ -1,0 +1,229 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: white;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #00c;
+}
+
+a:focus, a:hover, a:active {
+	color: #c00;
+}
+
+h1 {
+	font-size: 14pt;
+}
+
+h2 {
+	font-size: 12pt;
+	padding-top: 20px;
+}
+
+h3 {
+	font-size: 11pt;
+	padding-top: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+	padding-bottom: 5px;
+}
+
+h4, h5 {
+	font-size: 10pt;
+	padding-top: 5px;
+}
+
+form {
+	margin: 5px;
+	padding: 5px;
+}
+
+form > fieldset {
+	background: #f8f8f8;
+	border: 1px solid #d0d0d0;
+	-moz-border-radius-topright: 1em;
+	border-top-right-radius: 1em;
+	padding: 5px 10px;
+	margin-bottom: 8px;
+}
+
+form > fieldset > legend {
+	font-size: 11pt;
+	font-weight: bold;
+	color: #444;
+}
+
+form > fieldset > div {
+	clear: left;
+	margin: 8px 0;
+}
+
+form label {
+	margin-right: 1em;
+	text-align: right;
+}
+
+form input[type="text"], form input[type="password"], form textarea, form select {
+	width: 250px;
+	padding: 1px;
+	border: 1px solid #aaa;
+	background: #fafafa;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+}
+
+form input:hover, form input:focus, form input:active,
+form textarea:hover, form textarea:focus, form textarea:active,
+form select:hover, form select:focus, form select:active {
+	background-color: #ffc;
+	border-color: #888;
+}
+
+form button {
+	padding: 2px 6px;
+	border: 1px solid #aaa;
+	background: #e0e0e0;
+	background: -moz-linear-gradient(center top, #f0f0f0 40%, #e0e0e0 70%);
+	background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#f0f0f0), to(#e0e0e0));
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+form button:hover, form button:focus, form button:active {
+	background: #d0d0d0;
+	background: -moz-linear-gradient(center top, #e8e8e8 40%, #d8d8d8 70%);
+	background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#e8e8e8), to(#d8d8d8));
+	border-color: #888;
+}
+
+form label > span {
+	text-decoration: underline;
+}
+
+form > fieldset > div.mandatory > label {
+	font-weight: bold;
+}
+
+form.fixed {
+	width: 420px;
+}
+
+form.fixed label[for] {
+	display: block;
+	float: left;
+	width: 90px;
+}
+
+form.single {
+	width: 450px;
+}
+
+form.single button {
+	margin-left: 0.5em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #ccc;
+	padding: 2px 4px;
+}
+
+th {
+	background: #e0e0e0;
+	background: -moz-linear-gradient(center top, #e8e8e8 0%, #d8d8d8 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e8e8e8), to(#d8d8d8));
+	text-align: left;
+}
+
+table.data tr:nth-child(odd) > td {
+	background-color: #eee;
+}
+
+table.data tr:hover > td {
+	background-color: #ffc;
+}
+
+table.vertical th {
+	text-align: right;
+}
+
+p {
+	padding: 10px;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+
+img {
+	border: none;
+}
+
+div.dynamic p {
+	padding: 0;
+}
+
+div.center {
+	background: white;
+	background: -moz-linear-gradient(center top, #eee 0%, white 100%) no-repeat;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(white)) no-repeat;
+	text-align: center;
+}
+
+div.center > form {
+	margin: auto;
+	text-align: left;
+}
+
+div.center > form > div {
+	text-align: center;
+}
+
+.box {
+	font-weight: bold;
+	font-size: 90%;
+	font-stretch: wider;
+	color: white;
+	-moz-border-radius: 0.8em;
+	border-radius: 0.8em;
+}
+
+.box a {
+	color: #d8d8d8;
+}
+
+.box a:focus, .box a:hover, .box a:active {
+	color: #e8e8e8;
+}
+
+.info {
+	background: #060;	
+}
+
+.error {
+	background: #900;
+}
+
+.top {
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
